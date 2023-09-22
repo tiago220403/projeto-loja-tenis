@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="scrollbar.css">
+    <title>HoldBox</title>
+</head>
+
+<body>
+
+
+    <header>
+        
+        <nav> <a href="index.html" class="logo"><i class='bx bx-box'></i>HoldBox</a></nav>
+
+        <ul class="navegação">
+            <nav><li><a href="index.html">Inicio</a></li></nav>
+            <nav><li><a href="sneakers.html">Sneakears</a></li></nav>
+            <nav><li><a href="contato.html">Contato</a></li></nav>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart-alt'></i>
+            <div id="menu"><i class='bx bx-menu' ></i></div>
+            <nav> <a href="loguin.html" class="logo"><i class='bx bx-user'></i></a></nav>
+
+        </div><!--header-icons-->
+
+
+
+    </header> 
+
+    <section class="home">
+        <div class="home-imagem">
+            <img src="./imagens/tenis home/jordan1.png" class="one">
+        </div><!--home-imagem-->
+
+        <div class="home-text">
+
+            <h1>Jordan 1 <br> Mid</h1>
+            <h5>ULTIMAS UNIDADES</h5>
+            <h3>R$999,99</h3>
+            <a href="#" class="btn">Compre Agora</a>
+        </div> <!--Home-text-->
+    </section><!--home-->
+    
+
+    <div class="main">
+        <div class="row">
+            <li><img src="./imagens/tenis home/jordan1 p.png" onclick="slider('./imagens/tenis home/jordan1.png')"></li>
+        </div> <!---row-->
+   
+
+    <div class="row2">
+        <li><img src="./imagens/tenis home/jordan4 p.png" onclick="slider('./imagens/tenis home/jordan4.png')"></li>
+    </div> <!---row2-->
+   
+
+    <div class="row3">
+        <li><img src="./imagens/tenis home/jordan3 p.png" onclick="slider('./imagens/tenis home/jordan3.png')"></li>
+    </div> <!---row3-->
+    </div><!--main-->
+
+    <div class="redes socias">
+        <div class="instagram">
+            <li><img src="./imagens/redes sociais/instagram.png"> </li>
+        </div> <!--instagram-->
+
+        <div class="redes socias">
+            <div class="instagram">
+                <li><img src="./imagens/redes sociais/twitter.png"> </li>
+            </div> <!--twitter-->
+
+            <div class="redes socias">
+                <div class="instagram">
+                    <li><img src="./imagens/redes sociais/facebook.png"> </li>
+                </div> <!--facebook-->
+
+    </div> <!--rede socias icones-->
+
+
+
+
+    
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+
+</body>
+</html>
